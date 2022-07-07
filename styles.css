@@ -1,0 +1,198 @@
+:root{
+  --font-family: 'Poppins', sans-serif;
+  --color-white: #f3f3f3;
+  --color-darkblue: #21325E;
+  --color-darkblue-apha:rgba(22, 22, 101, 0.8);
+  --color-green:#4E944F;
+
+  --accent-left:rgba(58, 58, 158, 0.8);
+  --accent-right:rgba(136, 136, 206, 0.7);
+
+  --size-subheading: 1.125rem;
+  --size-label: 1.125rem;
+}
+
+*,
+::before,
+::after{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 1.5;
+  background: linear-gradient(to right, var(--accent-left),var(--accent-right)), url("./image\ large.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--color-white);
+  margin: 0;
+}
+
+button,
+input,
+textarea,
+select{
+  font-family: inherit;
+}
+
+/* utility */
+.container{
+  margin: 3.125rem auto;
+}
+
+.text-center-header{
+  text-align: center !important;
+}
+
+.description{
+  font-size: var(--size-subheading);
+  margin: 1rem auto;
+}
+
+header{
+  padding: 2rem 1rem 1rem 1rem;
+  text-shadow: 1px 1px #333333;
+}
+
+h1{
+  font-weight:400;
+  line-height: 1.2; 
+  margin: 0;
+}
+
+/* form */
+form{
+  background-color: var(--color-darkblue-apha);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.5re;
+  width: 50%;
+  margin: auto;
+}
+
+.form-group-container{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.form-group-container p{
+  line-height: 1rem;
+  margin: 0.5rem 0.1rem; 
+}
+
+.form-group-container p:not(:nth-child(1)){
+  margin: 0.5rem 0;
+}
+
+.form-label{
+  font-size: var(--size-label);
+}
+
+.form-control{
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  height: 2.5rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dddddd;
+  margin-top: 0.4rem;
+}
+
+input [type="radio"],
+input [type="chekbox"]{
+  width: 1rem;
+  height: 1rem;
+}
+
+input [type="chekbox"]{
+  margin-right: 0.5rem;
+}
+
+textarea{
+  font-size: 1.2rem;
+  padding: 0.375rem 0.75rem;
+  width: 100%;
+  height: auto;
+  border: none;
+  margin: 0.5rem 0;
+}
+
+button{
+  background-color: var(--color-green);
+  cursor: pointer;
+  border: none;
+  color: var(--color-white);
+  padding: 0.75rem;
+  font-size: var(--size-label);
+}
+
+@media screen and (max-width: 1141px) {
+  form{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  form{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  form{
+    padding: 0.625rem;
+  }
+  .form-group-container{
+    margin:1rem 0;
+
+  }
+  .form-group-container p{
+    line-height:1.4;
+    margin: 0.5rem 0.1rem;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

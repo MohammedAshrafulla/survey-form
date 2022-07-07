@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Survey-Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center-header">Smartphone Usage Survey Form</h1>
+      <p id="description" class="description text-center-header"><em>Thank you for taking the time to fill out the
+          survey-form about</em>
+        smartphone usage.</p>
+    </header>
+    <form action="#" id="survey-form" class="form-label">
+      <div class="form-group-container">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group-container">
+        <label for="email" id="email-label">Email: </label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group-container">
+        <label for="number" id="number-label">Age: </label>
+        <input type="number" name="age" id="number" class="form-control" min="14" max="100" placeholder="Age"
+          required />
+      </div>
+      <div class="form-group-container">
+        <p id="gender-label">Gender:</p>
+        <p>
+          <label>
+            <input type="radio" name="radio-group" class="input-radio" id="male" value="Male" required
+              checked />Male</label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="radio-group" class="input-radio" id="female" value="Female"
+              required />Female</label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="radio-group" class="input-radio" id="other-gender" value="Other-gender"
+              required />other</label>
+        </p>
+      </div>
+      <div class="form-group-container">
+        <label for="dropdown">Which mobile network do you use?</label>
+        <select name="mobile-network" class="form-control" id="dropdown">
+          <option value="0">Select</option>
+          <option value="1">Jio</option>
+          <option value="2">Airtel</option>
+          <option value="3">BSNL</option>
+          <option value="4">Vodafone Idea Limited</option>
+        </select>
+      </div>
+      <div class="form-group-container">
+        <p>How long do you use your mobile phone in a day? </p>
+        <p>
+          <label>
+            <input type="radio" name="Time-spend" class="input-radio" id="less-than-two-hours"
+              value="less than two hours" />less than 2 hours</label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="Time-spend" class="input-radio" id="three-to-five-hours"
+              value="three to five hours" />3 to 5 hours</label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="Time-spend" class="input-radio" id="five-to-ten-hours"
+              value="five to ten hours" />5
+            to 10 hours</label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="Time-spend" class="input-radio" id="more-than-ten-hours"
+              value="more than ten hours" /> more than 10 hours</label>
+        </p>
+      </div>
+      <div class="form-group-container">
+        <p>For which of the following activities do you use your smartphone?</p>
+        <p>
+          <label>
+            <input type="radio" class="input-radio" name="radio-group" id="calls" value="calls" />Phone calls</label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" class="input-radio" name="radio-group" id="messaging" value="messaging" />SMS</label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" class="input-radio" name="radio-group" id="youtube" value="youtube" />Youtube</label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" class="input-radio" name="radio-group" id="studying" value="studying" />Studying</label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" class="input-radio" name="radio-group" id="Entertaining"
+              value="entertaining" />Entertainment (e.g.,Movies,games)</label>
+        </p>
+        <label>
+          <input type="radio" class="input-radio" name="radio-group" id="shopping" value="shopping" />Shopping</label>
+      </div>
+
+      <div class="form-group-container">
+        <p>Which social media app do you use the most?<span class="apply">(check all that apply)</span></p>
+        <p>
+          <label>
+            <input type="checkbox" class="media-checkbox" name="checkbox" id="facebook" value="facebook"
+              required />Facebook</label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" class="media-checkbox" name="checkbox" id="whatsapp" value="whatsapp"
+              required />Whatsapp</label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" class="media-checkbox" name="checkbox" id="instagram" value="instagram"
+              required />Instagram</label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" class="media-checkbox" name="checkbox" id="twitter" value="twitter"
+              required />Twitter</label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" class="media-checkbox" name="checkbox" id="linkedin" value="linkedin"
+              required />Linkedin</label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" class="media-checkbox" name="checkbox" id="snapchat" value="snapchat"
+              required />Snapchat</label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" class="media-checkbox" name="checkbox" id="discord" value="discord"
+              required />Discord</label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" class="media-checkbox" name="checkbox" id="pinterest" value="pinterst"
+              required />Pinterest</label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" class="media-checkbox" name="checkbox" id="sharechat" value="sharechat"
+              required />Sharechat</label>
+        </p>
+      </div>
+      <div class="form-group-container">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" name="comment" class="textarea-comments" rows="4" cols="50"
+          placeholder="Enter your comment here...." required></textarea>
+      </div>
+      <div class="form-group-container">
+        <button type="submit" id="submit" class="submit-button">submit</button>
+      </div>
+
+
+    </form>
+  </div>
+
+
+
+</body>
+
+</html>
